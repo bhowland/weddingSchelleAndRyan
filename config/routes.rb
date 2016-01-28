@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+
+
   root 'static_pages#index'
+  get 'maps_ebed' => 'maps_ebed#directions'
+  get 'maps_ebed' => 'maps_ebed#stay'
+  get 'response' => 'response#rsvp'
+  get 'static_pages' => 'static_pages#garb'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
