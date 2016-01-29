@@ -1,8 +1,15 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
+
+#Started adding a forum but I need to setup a db and i want to do that with the RSVP page
+#going to hold off on this till the RSVP page/DB is setup
+#https://github.com/rubysherpas/forem
+#adding a gem to have a forum
+#gem 'forem', :github => "radar/forem", :branch => "rails4"
+#added this for the forum also but it is still a nice gem
+#gem 'will_paginate', '3.0.5'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
