@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'stay' => 'maps_ebed#stay'
   get 'response' => 'response#rsvp'
   get 'garb' => 'static_pages#garb'
+  get 'contact' => 'static_pages#contact'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
