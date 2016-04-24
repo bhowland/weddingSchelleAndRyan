@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_on_invite: MyString
+  invitees_present: 
+  plus_ones: 
+  dressed_in_garb: MyString
+  phone: MyString
+  email: MyString
+
+two:
+  name_on_invite: MyString
+  invitees_present: 
+  plus_ones: 
+  dressed_in_garb: MyString
+  phone: MyString
+  email: MyString
