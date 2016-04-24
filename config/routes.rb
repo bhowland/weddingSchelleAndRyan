@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'invitees/new'
+
   root 'static_pages#index'
   get 'directions' => 'maps_ebed#directions'
   get 'stay' => 'maps_ebed#stay'
