@@ -6839,3 +6839,25 @@ input:focus,
 }
 
 }
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 25%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+.locater {
+  position: absolute;
+  visibility: visible;
+  left:200px;
+  top:300px;
+  z=index:200;
+  
+}
