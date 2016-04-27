@@ -11,8 +11,11 @@ Rails.application.routes.draw do
   get 'response' => 'response#rsvp'
   get 'garb' => 'static_pages#garb'
   get 'contact' => 'static_pages#contact'
+  get 'invitee' => 'invitee#new'
   
-  resources :users
+  #not sure userS and inviteeS or non-plural versions
+  resources :user
+  resources :invitee
   
   #login page routes
   get    'login'   => 'sessions#new'

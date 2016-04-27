@@ -6853,7 +6853,7 @@ input {
   height: auto !important;
 }
 
-.locater {
+/*#locater {
   position: absolute;
   visibility: visible;
   left:200px;
@@ -6861,3 +6861,9 @@ input {
   z=index:200;
   
 }
+
+.signup {
+  
+  padding-left: 290px;
+  
+}*/
