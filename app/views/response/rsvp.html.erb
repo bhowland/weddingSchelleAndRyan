@@ -18,59 +18,20 @@
 <p>
     <div class='wordWeddingWrapper'>
         
-        
-        <%= form_tag :acion => "create" do %>
+                <%= form_tag('/response') do -%>
             
-            Name: <%=text_field "invitee", "name_on_invite" %>&#x00A;
+            Name: <%=text_field "response", "name_on_invite" %>&#x00A;
             <br />
-            Invitees Present <%=text_field "invitee", "invitees_present" %>&#x00A;
+            Invitees Present <%=text_field "response", "responses_present" %>&#x00A;
             <br />
-            How many plus ones will be joining?: <%=text_field "invitee", "plus_ones" %>&#x00A;
+            How many plus ones will be joining?: <%=text_field "response", "plus_ones" %>&#x00A;
             <br />
-            Will you be dressed in garb?: <%=text_field "invitee", "dressed_in_garb" %>&#x00A;
+            Will you be dressed in garb?: <%=text_field "response", "dressed_in_garb" %>&#x00A;
             <br />
-            Phone: <%=text_field "invitee", "phone" %>&#x00A;
+            Phone: <%=text_field "response", "phone" %>&#x00A;
             <br />
-            Email: <%=text_field "invitee", "email" %>&#x00A;
+            Email: <%=text_field "response", "email" %>&#x00A;
             <br />
             
             <%= submit_tag "Submit" %>
-            <% end %>
-        
-        
-        <!--
-        <form id='signup'>
-            
-            <br />
-            <label for='name'>Name</label>
-            <input type='text' name='name'>
-            <br />
-            
-            <label for='invitees_present'>How many members listed on the invite will be coming?</label>
-            <input type='text' name='invitees_present'>
-            <br />
-            
-            <label for='plus_ones'>How many "Plus Ones" are you bringing?</label>
-            <input type='text' name='pluse_ones'>
-            <br />
-            
-            <label for='dressed_in_garb'>I will be dressed in garb</label>
-            <input type='checkbox' name='dressed_in_garb'>
-            <br />
-            
-            <label for='name'>Phone</label>
-            <input type='text' name='phone'>
-            <br />
-            
-            <label for='name'>Email</label>
-            <input type='text' name='email'>
-            <br />
-            
-            <input type='submit' name='Submit' value='Submit'>
-            
-            
-            
-        </form> -->
-    </div>
-    
-</p>
+        <% end -%>
