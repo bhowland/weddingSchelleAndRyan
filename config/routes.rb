@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
 
 
-  get 'sessions/new'
-
-  get 'invitees/new'
+  
 
   root 'static_pages#index'
   get 'directions' => 'maps_ebed#directions'
@@ -13,9 +11,20 @@ Rails.application.routes.draw do
   get 'contact' => 'static_pages#contact'
   get 'invitee' => 'invitee#new'
   
+  #moved from top ____
+  get 'sessions/new'
+
+  get 'invitees/new'
+  #moved from top ^
+  
+  post 'invitee' =>'invitee#create'
+  
   #not sure userS and inviteeS or non-plural versions
   resources :user
   resources :invitee
+  
+  #matching?!?
+  match '/invitee' => 'invitee#index', :via => :post
   
   #login page routes
   get    'login'   => 'sessions#new'

@@ -17,6 +17,28 @@
 
 <p>
     <div class='wordWeddingWrapper'>
+        
+        
+        <%= form_tag :acion => "create" do %>
+            
+            Name: <%=text_field "invitee", "name_on_invite" %>&#x00A;
+            <br />
+            Invitees Present <%=text_field "invitee", "invitees_present" %>&#x00A;
+            <br />
+            How many plus ones will be joining?: <%=text_field "invitee", "plus_ones" %>&#x00A;
+            <br />
+            Will you be dressed in garb?: <%=text_field "invitee", "dressed_in_garb" %>&#x00A;
+            <br />
+            Phone: <%=text_field "invitee", "phone" %>&#x00A;
+            <br />
+            Email: <%=text_field "invitee", "email" %>&#x00A;
+            <br />
+            
+            <%= submit_tag "Submit" %>
+            <% end %>
+        
+        
+        <!--
         <form id='signup'>
             
             <br />
@@ -48,7 +70,7 @@
             
             
             
-        </form>
+        </form> -->
     </div>
     
 </p>
