@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   
 
+  get 'errors/not_found'
+
+  get 'errors/internal_server_error'
+
   root 'static_pages#index'
   get  'directions' => 'maps_ebed#directions'
   get  'stay'       => 'maps_ebed#stay'
@@ -28,6 +32,8 @@ Rails.application.routes.draw do
   
   #matching?!?
   #match '/invitee' => 'invitee#index', :via => :post
+  match "/404", :to => "errors#not_found", :via => :all
+  match "/500", :to => "errors#internal_server_error", :via => :all
   
   #login page routes
   #get    'login'   => 'sessions#new'
