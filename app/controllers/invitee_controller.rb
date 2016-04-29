@@ -1,4 +1,19 @@
-class InviteesController < ApplicationController
+class InviteeController < ApplicationController
+  
+  def create
+    #render new
+    #@invitee = Invitee.all
+    #redirect_to @invitee
+  end
+  
+  def index
+    
+  end
+  
+  
+  
+  
+=begin    COMMENTED OUT
   def new
     @invitee = Invitee.new
     create if request.post?
@@ -19,5 +34,10 @@ class InviteesController < ApplicationController
     
       render :action => 'new'
   end
+  
+  def delete
+    
+  end
+=end    END COMMENT
   
 end
