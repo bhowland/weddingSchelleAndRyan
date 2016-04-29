@@ -1,37 +1,32 @@
 <% provide(:title, 'RSVP') %>
-<h3 class='wordWeddingWrapper'>
-  RSVP Form  <br />
-  
-  
-  
-
- <br />
-  Maybe ask for the name on the invitations?<br />
-  Ask how many invites are coming from the invitations?<br />
-  How many +1's are coming? (like a family of 4 invities might being 2 extras) <br />
-  Ask if/what they plan on doing extra for the wedding? (dressing up and/or fighting/ w/e events might be happening)<br />
-  Are they planning to stay local or at all? (overnight?) <br />
-</h3>
-
+<h3 class='wordWeddingWrapper'> RSVP Form </h3>
 <br />
+  <p class='wordWeddingWrapper'>
+    Please RSVP here:<br />
+        Put your name from the invatation.<br />
+        Your Phone Number.<br />
+        Your email.<br />
+        The NUMBER of people joining from the invatation.<br />
+        If you are wearing garb or not (Yes or No).<br />
+        How many extra people you are bringing with.<br />
+        <br />
 
-<p>
-    <div class='wordWeddingWrapper'>
-        
-                <%= form_tag('/response') do -%>
-            
-            Name: <%=text_field "response", "name_on_invite" %>&#x00A;
-            <br />
-            Invitees Present <%=text_field "response", "responses_present" %>&#x00A;
-            <br />
-            How many plus ones will be joining?: <%=text_field "response", "plus_ones" %>&#x00A;
-            <br />
-            Will you be dressed in garb?: <%=text_field "response", "dressed_in_garb" %>&#x00A;
-            <br />
-            Phone: <%=text_field "response", "phone" %>&#x00A;
-            <br />
-            Email: <%=text_field "response", "email" %>&#x00A;
-            <br />
-            
-            <%= submit_tag "Submit" %>
-        <% end -%>
+        <div class='wordWeddingWrapper'>
+        <%= form_tag('/response') do -%>
+        Name: <%=text_field "response", "name_on_invite" %>
+        <br />
+        <!-- telephone_field_tag -->
+        Phone: <%=text_field "response", "phone" %>
+        <br />
+        Email: <%=text_field "response", "email" %>
+        <br />
+        <!-- number_field_tag -->
+        Invitees Present <%=text_field "response", "responses_present" %>
+        <br />
+        Will you be dressed in garb?: <%=text_field "response", "dressed_in_garb" %>
+        <br />
+        <!-- number_field_tag -->
+        How many plus ones will be joining?: <%=text_field "response", "plus_ones" %>
+        <br />
+        <%= submit_tag "Submit" %>
+    <% end -%>
