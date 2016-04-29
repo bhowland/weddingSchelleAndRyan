@@ -11,6 +11,7 @@
         How many extra people you are bringing with.<br />
         <br />
 
+<<<<<<< HEAD
         <div class='wordWeddingWrapper'>
         <%= form_tag('/response') do -%>
         Name: <%=text_field "response", "name_on_invite" %>
@@ -21,7 +22,7 @@
         Email: <%=text_field "response", "email" %>
         <br />
         <!-- number_field_tag -->
-        Invitees Present <%=text_field "response", "responses_present" %>
+        Invitees Present <%=text_field "response", "invitees_present" %>
         <br />
         Will you be dressed in garb?: <%=text_field "response", "dressed_in_garb" %>
         <br />
@@ -30,3 +31,25 @@
         <br />
         <%= submit_tag "Submit" %>
     <% end -%>
+=======
+<p>
+    <div class='wordWeddingWrapper'>
+        
+                <%= form_tag('/response') do -%>
+            
+            Name: <%=text_field "response", "name_on_invite" %>&#x00A;
+            <br />
+            Invitees Present <%=text_field "response", "invitees_present" %>&#x00A;
+            <br />
+            How many plus ones will be joining?: <%=text_field "response", "plus_ones" %>&#x00A;
+            <br />
+            Will you be dressed in garb?: <%=text_field "response", "dressed_in_garb" %>&#x00A;
+            <br />
+            Phone: <%=text_field "response", "phone" %>&#x00A;
+            <br />
+            Email: <%=text_field "response", "email" %>&#x00A;
+            <br />
+            
+            <%= submit_tag "Submit" %>
+        <% end -%>
+>>>>>>> display
