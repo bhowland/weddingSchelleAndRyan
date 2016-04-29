@@ -12,7 +12,7 @@ end
 
 def create
   @invitee = Invitee.create(params[:invitee])
-  redirect_to :action => 'edit', :id => @invitee.id
+  redirect_to :action => 'edit'
 end
 
 def edit
@@ -20,7 +20,7 @@ def edit
 
 if request.post?
   @invitee.update_attributes(params[:invitee])
-  redirect_to :action => 'edit', :id => @invitee.id and return
+  redirect_to :action => 'edit'
 end
 
   render :action => 'new'
