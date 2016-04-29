@@ -2,3 +2,56 @@
 <h3 class='wordWeddingWrapper'> Invitee </h3>
 
 
+<ul class="wordWeddingWrapper">
+<table>
+    <tr>
+        <td>name</td>
+        <td>invitees present</td>
+        <td>plus ones</td>
+        <td>dressed in garb</td>
+        <td>phone</td>
+        <td>email</td>
+        <td>remove invitee</td>
+    </tr>
+    
+
+    
+  <% @invitee.each do |invitee| %>
+
+    <tr>
+        
+    <td>
+      <%= link_to invitee.name_on_invite, invitee %>
+    </td>
+    
+    <td>
+      <%= link_to invitee.invitees_present, invitee %>
+    </td>
+    
+    <td>
+      <%= link_to invitee.plus_ones, invitee %>
+    </td>
+    
+    <td>
+      <%= link_to invitee.dressed_in_garb, invitee %>
+    </td>
+    
+    <td>
+      <%= link_to invitee.phone, invitee %>
+    </td>
+    
+    <td>
+      <%= link_to invitee.email, invitee %>
+    </td>
+    
+    <td>
+        <%= button_to "delete", action: 'delete', id: "invitee.id", method: "delete" %>
+    </td>
+    
+    </tr>
+    
+    <br />
+    
+  <% end %>
+  
+</table>

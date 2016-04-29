@@ -2,6 +2,19 @@ class AdminController < ApplicationController
   
   def invitee 
   end
+  
+  def admin
+    @invitee = Invitee.all
+  end
+  
+  def show
+    @invitee = Invitee.find(params[:id])
+  end
+  
+  def delete
+    @invitee = Invitee.find(params[:id]).destroy
+    redirect_to admin
+  end  
 
   # def create
   #   #render new
