@@ -19,7 +19,7 @@
   <% @invitee.each do |invitee| %>
 
     <tr>
-        
+
     <td>
       <%= link_to invitee.name_on_invite, invitee %>
     </td>
@@ -45,7 +45,7 @@
     </td>
     
     <td>
-        <%= button_to "delete", action: 'delete', id: "invitee.id", method: "delete" %>
+        <%= button_to "delete", admin_path, method: "destroy", :invitee_id => invitee.id, data: { confirm: "you sure?" } %>
     </td>
     
     </tr>

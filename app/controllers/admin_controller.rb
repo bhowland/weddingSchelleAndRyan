@@ -1,6 +1,7 @@
 class AdminController < ApplicationController
   
-  def invitee 
+  def invitee
+    @invitee = Invitee.id
   end
   
   def admin
@@ -11,10 +12,19 @@ class AdminController < ApplicationController
     @invitee = Invitee.find(params[:id])
   end
   
-  def delete
-    @invitee = Invitee.find(params[:id]).destroy
-    redirect_to admin
-  end  
+  #def delete
+   # Invitee.find_by(id: params[:id]).destroy
+    #redirect_to admin
+  #end 
+  
+  def destroy
+    #@invitee = Invitee.where("invitee.id = ?")
+    @invitee = Invitee.find_by_id(params[:id])
+    #@invitee.delete
+    redirect_to request.referrer
+    flash[:success] = "User Deleted"
+  end
+  
 
   # def create
   #   #render new

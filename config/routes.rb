@@ -11,25 +11,11 @@ Rails.application.routes.draw do
   get  'garb'       => 'static_pages#garb'
   get  'contact'    => 'static_pages#contact'
 
-
-  # post 'invitee'    => 'invitee#create'
-
-  post 'admin'    => 'admin#delete'
+  post 'admin'    => 'admin#destroy'
   get  'admin'    => 'admin#admin'
-  
   
   
   post 'response'   => 'response#create'
   get  'response'   => 'response#edit'
-  
-  #moved from top ____
-  #get 'sessions/new'
 
-  #matching?!?
-  #match '/invitee' => 'invitee#index', :via => :post
-  
-  #login page routes
-  #get    'login'   => 'sessions#new'
-  #post   'login'   => 'sessions#create'
-  #delete 'logout'  => 'sessions#destroy'
 end

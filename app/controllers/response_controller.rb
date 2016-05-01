@@ -15,8 +15,6 @@ def create
 @invitee = Invitee.create(params[:invitee])
 redirect_to :action => 'edit'
 
-  @invitee = Invitee.create(params[:invitee])
-  redirect_to :action => 'edit'
 end
 
 def edit
