@@ -11,8 +11,12 @@ Rails.application.routes.draw do
   get  'garb'       => 'static_pages#garb'
   get  'contact'    => 'static_pages#contact'
 
-  post 'admin'    => 'admin#destroy'
-  get  'admin'    => 'admin#admin'
+  post 'admin'      => 'admin#destroy'
+  get  'admin'      => 'admin#admin'
+  post "invitee/:id"  => 'admin#destroy'
+  #^^^^^^^^^^^^^^^^^^^^^^^   possibly here in routes
+
+  
   
   
   post 'response'   => 'response#create'

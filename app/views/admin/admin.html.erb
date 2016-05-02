@@ -19,6 +19,10 @@
   <% @invitee.each do |invitee| %>
 
     <tr>
+      
+    <td>
+      <%= link_to invitee.id, invitee %>
+    </td>
 
     <td>
       <%= link_to invitee.name_on_invite, invitee %>
@@ -44,8 +48,29 @@
       <%= link_to invitee.email, invitee %>
     </td>
     
+    <!-- DELETE PROBLEM HERE - deleting wrong ID - only the first display is deleted -->
     <td>
-        <%= button_to "delete", admin_path, method: "destroy", :invitee_id => invitee.id, data: { confirm: "you sure?" } %>
+        <%= @id = invitee.id =%>
+        <%= link_to @id, "admin", method: "destroy", data: { confirm: "you sure?" } %>
+        
+        
+        
+        
+        <!--      RIGHT HERE  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^      
+         <%= link_to "delete", @invitee.find_by(params[:invitee]), method: "destroy", data: { confirm: "you sure?" } %>
+                                              WORKING LINE          -->
+        <!-- <%= @id = invitee.id =%>
+        <%= link_to "delete", @invitee.find_by(params[@id]), method: "destroy", data: { confirm: "you sure?" } %> 
+        Deletes only first record   -->
+        
+        <!--
+        <%= @id = invitee.id =%>
+        <%= link_to @id, method: "destroy", data: { confirm: "you sure?" } %>
+        Shows proper id associated w/ record, but can't delete  - link in lower left shows the controller method (on webpage)-->
+        
+        
+        
+        
     </td>
     
     </tr>
