@@ -11,23 +11,31 @@
         How many extra people you are bringing with.<br />
         <br />
 
+        
 
         <div class='wordWeddingWrapper'>
-        <%= form_tag('/response') do -%>
-        Name: <%=text_field "response", "name_on_invite" %>
+        <%= form_tag('/invitee', :method=>'post') do -%>
+        
+        Name: <%= text_field_tag "name_on_invite" %>
         <br />
-        Email: <%=text_field "response", "email" %>
+        
+        Email: <%= text_field_tag"email" %>
         <br />
+        
         <!-- telephone_field_tag -->
-        Phone: <%=text_field "response", "phone" %>
+        Phone: <%= text_field_tag "phone" %>
         <br />
+        
         <!-- number_field_tag -->
-        Invitees Present <%=text_field "response", "invitees_present" %>
+        Invitees Present <%= text_field_tag "invitees_present" %>
         <br />
-        Will you be dressed in garb?: <%=text_field "response", "dressed_in_garb" %>
+        
+        Will you be dressed in garb?: <%= text_field_tag "dressed_in_garb" %>
         <br />
+        
         <!-- number_field_tag -->
-        How many plus ones will be joining?: <%=text_field "response", "plus_ones" %>
+        How many plus ones will be joining?: <%= text_field_tag "plus_ones" %>
         <br />
+        
         <%= submit_tag "Submit" %> 
     <% end -%>

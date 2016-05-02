@@ -21,39 +21,37 @@
     <tr>
       
     <td>
-      <%= link_to invitee.id, invitee %>
+      <%= invitee.id %>
     </td>
 
     <td>
-      <%= link_to invitee.name_on_invite, invitee %>
+      <%= invitee.name_on_invite %>
     </td>
     
     <td>
-      <%= link_to invitee.invitees_present, invitee %>
+      <%= invitee.invitees_present %>
     </td>
     
     <td>
-      <%= link_to invitee.plus_ones, invitee %>
+      <%= invitee.plus_ones %>
     </td>
     
     <td>
-      <%= link_to invitee.dressed_in_garb, invitee %>
+      <%= invitee.dressed_in_garb %>
     </td>
     
     <td>
-      <%= link_to invitee.phone, invitee %>
+      <%= invitee.phone %>
     </td>
     
     <td>
-      <%= link_to invitee.email, invitee %>
+      <%= invitee.email %>
     </td>
     
     <!-- DELETE PROBLEM HERE - deleting wrong ID - only the first display is deleted -->
     <td>
-        <%= @id = invitee.id =%>
+        
         <%= link_to "delete", invitee, method: "delete", data: { confirm: "you sure?" } %>
-        
-        
         
         
         <!--      RIGHT HERE  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^      
