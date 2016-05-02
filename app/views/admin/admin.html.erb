@@ -5,13 +5,13 @@
 <ul class="wordWeddingWrapper">
 <table>
     <tr>
-        <td>name</td>
-        <td>invitees present</td>
-        <td>plus ones</td>
-        <td>dressed in garb</td>
-        <td>phone</td>
-        <td>email</td>
-        <td>remove invitee</td>
+        <th>name</th>
+        <th>invitees present</th>
+        <th>plus ones</th>
+        <th>dressed in garb</th>
+        <th>phone</th>
+        <th>email</th>
+        <th>remove invitee</th>
     </tr>
     
 
@@ -21,55 +21,37 @@
     <tr>
       
     <td>
-      <%= link_to invitee.id, invitee %>
+      <%=  invitee.id %>
     </td>
 
     <td>
-      <%= link_to invitee.name_on_invite, invitee %>
+      <%=  invitee.name_on_invite %>
     </td>
     
     <td>
-      <%= link_to invitee.invitees_present, invitee %>
+      <%=  invitee.invitees_present %>
     </td>
     
     <td>
-      <%= link_to invitee.plus_ones, invitee %>
+      <%=  invitee.plus_ones %>
     </td>
     
     <td>
-      <%= link_to invitee.dressed_in_garb, invitee %>
+      <%=  invitee.dressed_in_garb %>
     </td>
     
     <td>
-      <%= link_to invitee.phone, invitee %>
+      <%=  invitee.phone %>
     </td>
     
     <td>
-      <%= link_to invitee.email, invitee %>
+      <%=  invitee.email %>
     </td>
     
-    <!-- DELETE PROBLEM HERE - deleting wrong ID - only the first display is deleted -->
     <td>
-        <%= @id = invitee.id =%>
-        <%= link_to "delete", invitee, method: "delete", data: { confirm: "you sure?" } %>
-        
-        
-        
-        
-        <!--      RIGHT HERE  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^      
-         <%= link_to "delete", @invitee.find_by(params[:invitee]), method: "destroy", data: { confirm: "you sure?" } %>
-                                              WORKING LINE          -->
-        <!-- <%= @id = invitee.id =%>
-        <%= link_to "delete", @invitee.find_by(params[@id]), method: "destroy", data: { confirm: "you sure?" } %> 
-        Deletes only first record   -->
-        
-        <!--
-        <%= @id = invitee.id =%>
-        <%= link_to @id, method: "destroy", data: { confirm: "you sure?" } %>
-        Shows proper id associated w/ record, but can't delete  - link in lower left shows the controller method (on webpage)-->
-        
-        
-        
+      
+        <%= link_to "Delete", invitee, method: "delete", data: { confirm: "Are you sure you want to delete #{invitee.name_on_invite}? " } %>
+
         
     </td>
     
