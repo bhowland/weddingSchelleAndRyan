@@ -12,50 +12,6 @@
         <br />
 
 
-<div class='wordWeddingWrapper'>
-  
-  
-        <%= @invitee = Invitee %>
-        <%= form_for(@invitee.all) do |invitee| %>
-        
-        <%= invitee.label :name_on_invite, "Name" %>
-        <%= invitee.text_field :name_on_invite %>
-        <br />
-        
-        <%= invitee.label :email, "email" %>
-        Email: <%= invitee.text_field :email %>
-        <br />
-        
-        <!-- telephone_field_tag -->
-        <%= invitee.label :phone, "phone" %>
-        <%= invitee.text_field :phone %>
-        <br />
-        
-        <!-- number_field_tag -->
-        <%= invitee.label :invitees_present, "invitees present" %>
-        <%= invitee.text_field :invitees_present %>
-        <br />
-        
-        <%= invitee.label :dressed_in_garb, "will u dress in garb?" %>
-        <%= invitee.text_field :dressed_in_garb %>
-        <br />
-        
-        <!-- number_field_tag -->
-        <%= invitee.label :plus_ones, "how many plus ones?" %>
-        <%= invitee.text_field :plus_ones %>
-        <br />
-        
-        <%= invitee.submit "Submit" %>
-        
-        <% end %>
-
-
-
-
-
-
-
-<!--
         <div class='wordWeddingWrapper'>
         <%= form_tag('/response') do -%>
         Name: <%=text_field "response", "name_on_invite" %>
@@ -74,4 +30,4 @@
         How many plus ones will be joining?: <%=text_field "response", "plus_ones" %>
         <br />
         <%= submit_tag "Submit" %> 
-    <% end -%>-->
+    <% end -%>
