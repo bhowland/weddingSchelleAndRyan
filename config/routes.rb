@@ -14,11 +14,12 @@ Rails.application.routes.draw do
   post 'admin'      => 'admin#destroy'
   get  'admin'      => 'admin#admin'
   post "invitee/:id"  => 'admin#destroy'
+  post "invitee"    => 'invitee#destroy'
   #^^^^^^^^^^^^^^^^^^^^^^^   possibly here in routes
 
   
   
-  
+  post 'response'   => 'response#new'
   post 'response'   => 'response#create'
   get  'response'   => 'response#edit'
 

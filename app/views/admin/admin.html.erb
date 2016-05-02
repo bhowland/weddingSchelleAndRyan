@@ -51,7 +51,7 @@
     <!-- DELETE PROBLEM HERE - deleting wrong ID - only the first display is deleted -->
     <td>
         <%= @id = invitee.id =%>
-        <%= link_to @id, "admin", method: "destroy", data: { confirm: "you sure?" } %>
+        <%= link_to "delete", invitee, method: "delete", data: { confirm: "you sure?" } %>
         
         
         

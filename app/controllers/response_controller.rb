@@ -1,8 +1,7 @@
 class ResponseController < ApplicationController
 
-def rsvp
-
-
+def show
+  @invitee = Invitee.find(params[:id])
 end
 
 def new
