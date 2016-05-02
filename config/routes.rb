@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-
-  
+  #not sure userS and inviteeS or non-plural versions
+  resources :user
+  resources :invitee
 
   get 'errors/not_found'
 
@@ -14,17 +15,17 @@ Rails.application.routes.draw do
   get  'garb'       => 'static_pages#garb'
   get  'contact'    => 'static_pages#contact'
 
+  post 'admin'      => 'admin#destroy'
+  get  'admin'      => 'admin#admin'
+  post "invitee/:id"  => 'admin#destroy'
+  #^^^^^^^^^^^^^^^^^^^^^^^   possibly here in routes
 
-  # post 'invitee'    => 'invitee#create'
-
-  get  'admin'    => 'admin#admin'
+  
   
   
   post 'response'   => 'response#create'
   get  'response'   => 'response#edit'
-  
-  #moved from top ____
-  #get 'sessions/new'
+
 
   #not sure userS and inviteeS or non-plural versions
   resources :user
@@ -39,4 +40,5 @@ Rails.application.routes.draw do
   #get    'login'   => 'sessions#new'
   #post   'login'   => 'sessions#create'
   #delete 'logout'  => 'sessions#destroy'
+
 end

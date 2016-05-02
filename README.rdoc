@@ -1,28 +1,12 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a site for a wedding for some people.  The wedding is is May and the goal is to done in November. 
 
-Things you may want to cover:
+Things need to be done yet
 
-* Ruby version
+* validate the form
+* admin page
+* contact page
+* chack with owners
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* https://thawing-savannah-88067.herokuapp.com/
