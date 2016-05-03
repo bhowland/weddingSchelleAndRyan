@@ -1,6 +1,5 @@
 class InviteeController < ApplicationController
   
-
   
   def destroy
     Invitee.find(params[:id]).destroy
