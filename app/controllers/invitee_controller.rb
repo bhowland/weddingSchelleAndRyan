@@ -18,7 +18,6 @@ class InviteeController < ApplicationController
   end
   
   def create
-   # @id = Invitee.find_by(params[:invitee])
     @invitee = Invitee.create(db)
     redirect_to request.referrer
     

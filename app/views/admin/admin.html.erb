@@ -4,22 +4,17 @@
 
 <ul class="wordWeddingWrapper">
 <table>
-    <tr>
-        <th>name</th>
-        <th>invitees present</th>
-        <th>plus ones</th>
-        <th>dressed in garb</th>
-        <th>phone</th>
-        <th>email</th>
-        <th>remove invitee</th>
-    </tr>
-    
-
-    
+  <tr>
+    <th>name</th>
+    <th>invitees present</th>
+    <th>plus ones</th>
+    <th>dressed in garb</th>
+    <th>phone</th>
+    <th>email</th>
+    <th>remove invitee</th>
+  </tr>
   <% @invitee.each do |invitee| %>
-
-    <tr>
-      
+  <tr>
     <td>
       <%=  invitee.id %>
     </td>
@@ -29,33 +24,21 @@
     <td>
       <%=  invitee.invitees_present %>
     </td>
-    
     <td>
       <%=  invitee.plus_ones %>
     </td>
-    
     <td>
       <%=  invitee.dressed_in_garb %>
     </td>
-    
     <td>
       <%=  invitee.phone %>
     </td>
-    
     <td>
       <%=  invitee.email %>
-
-    
     <td>
-      
-        <%= link_to "Delete", invitee, method: "delete", data: { confirm: "Are you sure you want to delete #{invitee.name_on_invite}? " } %>
-        
+        <%= link_to "Delete", invitee, method: "delete", data: { confirm: "Are you sure you want to delete #{invitee.name_on_invite}? " } %> 
     </td>
-    
-    </tr>
-    
-    <br />
-    
+  </tr>
+  <br />
   <% end %>
-  
 </table>
