@@ -1,9 +1,5 @@
 class AdminController < ApplicationController
-  
-  def index
-    @invitee = Invitee.all
-  end
-  
+    
   def admin
     @invitee = Invitee.all
   end
