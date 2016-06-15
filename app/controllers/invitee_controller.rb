@@ -15,9 +15,9 @@ class InviteeController < ApplicationController
   def create
     @invitee = Invitee.new(db)
       if @invitee.save 
-       redirect_to request.referrer, :flash => { :notice => 'Yay you are in if you want to change something you must contact us' }
+        redirect_to request.referrer, :flash => { :notice => 'Yay you are in if you want to change something you must contact us' }
       else        
-      redirect_to request.referrer , :flash => { :notice => 'Sorry there was an error'  }
+        redirect_to request.referrer , :flash => { :notice => 'Sorry there was an error'  }
     end
   end
 
