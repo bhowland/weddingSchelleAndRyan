@@ -27,11 +27,6 @@ Rails.application.routes.draw do
   post 'response'   => 'response#create'
   get  'response'   => 'response#edit'
   post 'invitee'    => 'invitee#create'
-
-
-  #not sure userS and inviteeS or non-plural versions
-  resources :user
-  resources :invitee
   
   #matching?!?
   #match '/invitee' => 'invitee#index', :via => :post

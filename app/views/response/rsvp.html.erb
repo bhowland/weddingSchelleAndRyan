@@ -11,31 +11,54 @@
         How many extra people you are bringing with.<br />
         <br />
 
-        
-
         <div class='wordWeddingWrapper'>
-        <%= form_tag('/invitee', :method=>'post') do -%>
-        
-        Name: <%= text_field_tag "name_on_invite" %>
-        <br />
-        
-        Email: <%= text_field_tag"email" %>
-        <br />
-        
-        <!-- telephone_field_tag -->
-        Phone: <%= text_field_tag "phone" %>
-        <br />
-        
-        <!-- number_field_tag -->
-        Invitees Present <%= text_field_tag "invitees_present" %>
-        <br />
-        
-        Will you be dressed in garb?: <%= text_field_tag "dressed_in_garb" %>
-        <br />
-        
-        <!-- number_field_tag -->
-        How many plus ones will be joining?: <%= text_field_tag "plus_ones" %>
-        <br />
-        
-        <%= submit_tag "Submit" %> 
+            <!-- <div align="center"> -->
+
+
+
+    
+
+
+
+
+
+
+            <%= form_for :invitee ,:url => {:action=>"create", :controller=>"invitee"} do |f| %>
+
+
+                <% if @invitee.errors.any? %>
+                    <div id="error_explanation">
+                        <h2><%= pluralize(@invitee.errors.count, "error") %> prohibited this invitee from being saved:</h2>
+                        <ul>
+                            <% @invitee.errors.full_messages.each do |msg| %>
+                              <li><%= msg %></li>
+                            <% end %>
+                        </ul>
+                    </div>
+                <% end %>
+
+
+
+                <p id="notice"><h2><%= flash[:notice] %></h2></p>
+                <div> <b>' * ' Are Required Information </b></div>
+                * <%= f.label :name_on_invite %>
+                <%= f.text_field :name_on_invite, class: 'form-control', autofocus: true, placeholder: 'i.e. John Smith Family'%>
+               
+                * <b> Number of </b><%= f.label :invitees_present %>
+                <%= f.number_field :invitees_present, class: 'form-control', placeholder: 'i.e. 4' %> 
+               
+                <%= f.label :plus_ones %>
+                <%= f.number_field :plus_ones, class: 'form-control', placeholder: 'i.e. 4' %>
+               
+                * <%= f.label :dressed_in_garb %>
+                <%= f.text_field :dressed_in_garb, class: 'form-control', placeholder: 'i.e. Yes' %> 
+               
+                * <%= f.label :phone %>
+                <%= f.text_field :phone, class: 'form-control', placeholder: 'i.e. 555.555.5555' %>
+               
+                <%= f.label :email %>
+                <%= f.text_field :email, class: 'form-control', placeholder: 'i.e. smith@sample.com' %>
+               
+                <%= f.submit " Send RSVP " %>
+              
     <% end -%>
