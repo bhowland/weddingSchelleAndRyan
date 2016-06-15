@@ -1,0 +1,24 @@
+<%= form_for :invitee ,:url => {:action=>"create", :controller=>"invitee"} do |f| %>
+
+    <p id="notice"><h2><%= flash[:notice] %></h2></p>
+    <div> <b>' * ' Are Required Information </b></div>
+    * <%= f.label :name_on_invite %>
+    <%= f.text_field :name_on_invite, class: 'form-control', autofocus: true, placeholder: 'i.e. John Smith Family'%>
+   
+    * <b> Number of </b><%= f.label :invitees_present %>
+    <%= f.number_field :invitees_present, class: 'form-control', placeholder: 'i.e. 4' %> 
+   
+    <%= f.label :plus_ones %>
+    <%= f.number_field :plus_ones, class: 'form-control', placeholder: 'i.e. 4' %>
+   
+    * <%= f.label :dressed_in_garb %>
+    <%= f.text_field :dressed_in_garb, class: 'form-control', placeholder: 'i.e. Yes' %> 
+   
+    * <%= f.label :phone %>
+    <%= f.text_field :phone, class: 'form-control', placeholder: 'i.e. 555.555.5555' %>
+   
+    <%= f.label :email %>
+    <%= f.text_field :email, class: 'form-control', placeholder: 'i.e. smith@sample.com' %>
+   
+    <%= f.submit " Send RSVP " %>
+    <% end %>

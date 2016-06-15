@@ -2,7 +2,6 @@ class InviteeController < ApplicationController
   
   def new 
     @invitee = Invitee.new
-    redirect_to request.referrer 
   end
 
   def show 
@@ -14,7 +13,7 @@ class InviteeController < ApplicationController
   end
   
   def create
-    @invitee = Invitee.create(db)
+    @invitee = Invitee.new(db)
       if @invitee.save 
        redirect_to request.referrer, :flash => { :notice => 'Yay you are in if you want to change something you must contact us' }
       else        
