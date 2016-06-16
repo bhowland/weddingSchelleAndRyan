@@ -5,9 +5,4 @@ class Invitee < ActiveRecord::Base
 	validates :dressed_in_garb, presence: true, length: { minimum: 1, maximum: 3 }
 	validates :phone, presence: true, length: { minimum: 7, maximum: 11 }
 	validates :email, length: { minimum: 4, maximum: 30 }
-
-
-
-
-
 end

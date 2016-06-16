@@ -4,6 +4,10 @@ class InviteeController < ApplicationController
     @invitee = Invitee.new
   end
 
+  def index
+    @invitee = Invitee.all
+  end
+
   def show 
   end
   
@@ -21,6 +25,7 @@ class InviteeController < ApplicationController
     end
   end
 
+private
   def db
     params.require(:invitee).permit(:name_on_invite, :invitees_present, :plus_ones, :dressed_in_garb, :phone, :email, :timestamps)
   end

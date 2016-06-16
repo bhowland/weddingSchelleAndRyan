@@ -1,4 +1,4 @@
-@import url("//fonts.googleapis.com/css?family=Roboto:400,500");
+ @import url("//fonts.googleapis.com/css?family=Roboto:400,500");
 /*!
  * bootswatch v3.3.2
  * Homepage: http://bootswatch.com
@@ -14,15 +14,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-#warlords_video {
-position: absolute;
-top: 34px;
-left: -20px;
-bottom: 0px;
-width: 1920px;
-height: 1000px;
-opacity: 1;
-}
+
 body {
   margin: 0;
 }
@@ -6728,12 +6720,13 @@ input:focus,
 }
 
 #sidebar-wrapper {
+  border-radius: 0px 50px 50px 0px;
   margin-left: -250px;
   left: 250px;
   width: 250px;
   background: #421805;                                          /*=======background for the sidebar=======*/
   position: fixed;
-  height: 100%;
+  height: 80%;
   overflow-y: auto;
   z-index: 1000;
   transition: all 0.4s ease 0s;
