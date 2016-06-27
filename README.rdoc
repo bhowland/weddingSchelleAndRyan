@@ -1,12 +1,14 @@
 == README
 
-This is a site for a wedding for some people.  The wedding is is May and the goal is to done in November. 
+This is a site for a wedding for some friends of mine.  The wedding is is May and the goal is to done in November. 
 
 Things need to be done yet
 
-* validate the form
-* admin page
-* contact page
-* chack with owners
+* get the responce back from the model 
+** I think this is a problem the @
+* admin page looks
+* contact page , home page , garb page
+* check in with owners
+* graphics
 
 * https://thawing-savannah-88067.herokuapp.com/
