@@ -2,15 +2,15 @@
 
 This is a site for a wedding for some friends of mine.  The wedding is is May and the goal is to done in *November*. 
 
-##### Things need to be done yet
+Things need to be done yet
 
 * get the responce back from the model 
-..* I think this is a problem the @
+* I think this is a problem the @
 * admin page looks
 * make proper contact, home, garb pages
 * check in with owners
 * graphics
 * auto sent an email after signup
 * be able to send an email from the adminisration
-##### Hosted at:
+ Hosted at:
 * https://thawing-savannah-88067.herokuapp.com/
