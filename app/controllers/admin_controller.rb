@@ -1,7 +1,13 @@
 class AdminController < ApplicationController
   
-  force_ssl
-  http_basic_authenticate_with :name => "Ben", :password => "sample"
+  #force_ssl
+  before_filter :authenticate
+
+  def authenticate
+    authenticate_or_request_with_http_basic('Administration') do |username, password|
+      username == 'admin' && password == 'password'
+    end
+  end
 
   def admin
     @invitee = Invitee.all
