@@ -6714,12 +6714,13 @@ input:focus,
 
 /*=====================================      SIDEBAR STUFF =================*/
 
+/*for making custom fonts*/
   @font-face {
     font-family: 'discoVikingFont'; /*a name to be used later*/
-    src: url('http://www.fontspace.com/category/viking?text=Norse.otf'); /*URL to font*/
+    src: url('jorvik.TTF'); /*URL to font  tried using a site link and just using a file nothing working yet*/
   }
 
-
+/*class for font*/
   .discoVikingFont {
     font-family: 'discoVikingFont';
   }
