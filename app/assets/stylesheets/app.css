@@ -6714,6 +6714,15 @@ input:focus,
 
 /*=====================================      SIDEBAR STUFF =================*/
 
+  @font-face {
+    font-family: 'disoVikingFont'; /*a name to be used later*/
+    src: url('http://www.dafont.com/viking.font'); /*URL to font*/
+  }
+
+  .disoVikingFont {
+    font-family: 'disoVikingFont';
+  }
+
     .wordWeddingWrapper {
   padding-left: 260px;
   transition: all 0.4s ease 0s;

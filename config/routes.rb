@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  #not sure userS and inviteeS or non-plural versions
+
   resources :user
   resources :invitee
 
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get  'admin'      => 'admin#admin'
   post "invitee/:id"  => 'admin#destroy'
   post "invitee"    => 'invitee#destroy'
-  #^^^^^^^^^^^^^^^^^^^^^^^   last line deletes correct entry
+
 
   
   
@@ -28,7 +28,8 @@ Rails.application.routes.draw do
   get  'response'   => 'response#edit'
   post 'invitee'    => 'invitee#create'
   
-  #matching?!?
+
+
   #match '/invitee' => 'invitee#index', :via => :post
   match "/404", :to => "errors#not_found", :via => :all
   match "/500", :to => "errors#internal_server_error", :via => :all
