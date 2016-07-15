@@ -4,10 +4,11 @@ This is a site for a wedding for some friends of mine.  The wedding is is May an
 
 Things need to be done yet
 
-* get the responce back from the model 
+* get the response back from the model 
 * I think this is a problem the @
-* admin page looks
+* admin page design
 * make proper contact, home, garb pages
+* Users maybe a forum?
 * check in with owners
 * graphics
 * auto sent an email after signup
