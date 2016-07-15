@@ -1,0 +1,3 @@
+class ResponseController < ApplicationController		
+ 		
+ end 
