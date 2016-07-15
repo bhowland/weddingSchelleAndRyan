@@ -13,5 +13,6 @@ Things need to be done yet
 * graphics
 * auto sent an email after signup
 * be able to send an email from the adminisration
+* fix font on production
  Hosted at:
 * https://thawing-savannah-88067.herokuapp.com/
