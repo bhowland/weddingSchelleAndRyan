@@ -6717,7 +6717,7 @@ input:focus,
 /*for making custom fonts*/
   @font-face {
     font-family: 'discoVikingFont'; /*a name to be used later*/
-    src: font-url('jorvik.TTF'); /*URL to font  tried using a site link and just using a file nothing working yet*/
+    src: font-url('jorvik.TTF'); /*had to change the file to be a css.scss from a css so we could do the font-url so it would work in production*/
   }
 
 /*class for font*/

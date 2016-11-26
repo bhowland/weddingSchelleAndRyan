@@ -4,15 +4,12 @@ This is a site for a wedding for some friends of mine.  The wedding is is May an
 
 Things need to be done yet
 
-* get the response back from the model 
-* I think this is a problem the @
-* admin page design
-* make proper contact, home, garb pages
+* get the response back from the model ( I think this is a problem the @ )
 * Users maybe a forum?
-* check in with owners
-* graphics
+* graphics? ( Would need for the owners )
 * auto sent an email after signup
+* admin page design
 * be able to send an email from the adminisration
-* fix font on production
+
  Hosted at:
 * https://thawing-savannah-88067.herokuapp.com/
