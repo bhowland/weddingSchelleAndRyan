@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   get  'response'   => 'response#rsvp'
   get  'garb'       => 'static_pages#garb'
   get  'contact'    => 'static_pages#contact'
+  get  'party'      => 'static_pages#weddingParty'
+  get  'food'       => 'static_pages#food'
+  get  'schedule'   => 'static_pages#schedule'
 
   post 'admin'      => 'admin#destroy'
   get  'admin'      => 'admin#admin'

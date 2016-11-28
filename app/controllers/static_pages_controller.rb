@@ -10,5 +10,11 @@ class StaticPagesController < ApplicationController
 
   def garb
   end
+
+  def weddingParty  	
+  end
+
+  def food  	
+  end
   
 end
