@@ -11,27 +11,23 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   get  'directions' => 'maps_ebed#directions'
   get  'stay'       => 'maps_ebed#stay'
-  get  'response'   => 'response#rsvp'
+
   get  'garb'       => 'static_pages#garb'
   get  'contact'    => 'static_pages#contact'
   get  'party'      => 'static_pages#weddingParty'
   get  'food'       => 'static_pages#food'
   get  'schedule'   => 'static_pages#schedule'
-
-  post 'admin'      => 'admin#destroy'
-  get  'admin'      => 'admin#admin'
-  post "invitee/:id"  => 'admin#destroy'
-  post "invitee"    => 'invitee#destroy'
-
-
+ 
+    # get  'response'   => 'response#rsvp'
+    # post 'admin'      => 'admin#destroy'
+    # get  'admin'      => 'admin#admin'
+    # post "invitee/:id"  => 'admin#destroy'
+    # post "invitee"    => 'invitee#destroy'
   
-  
-  post 'response'   => 'response#new'
-  post 'response'   => 'response#create'
-  get  'response'   => 'response#edit'
-  post 'invitee'    => 'invitee#create'
-  
-
+    # post 'response'   => 'response#new'
+    # post 'response'   => 'response#create'
+    # get  'response'   => 'response#edit'
+    # post 'invitee'    => 'invitee#create'
 
   #match '/invitee' => 'invitee#index', :via => :post
   match "/404", :to => "errors#not_found", :via => :all
