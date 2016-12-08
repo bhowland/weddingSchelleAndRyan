@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get  'party'      => 'static_pages#weddingParty'
   get  'food'       => 'static_pages#food'
   get  'schedule'   => 'static_pages#schedule'
+  get  'location'   => 'static_pages#location'
  
     # get  'response'   => 'response#rsvp'
     # post 'admin'      => 'admin#destroy'
