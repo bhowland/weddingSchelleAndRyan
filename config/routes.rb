@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get  'directions' => 'maps_ebed#directions'
   get  'stay'       => 'maps_ebed#stay'
 
-  get  'garb'       => 'static_pages#garb'
+  get  'garb'       => 'static_pages#garbV'
   get  'contact'    => 'static_pages#contact'
   get  'party'      => 'static_pages#weddingParty'
   get  'food'       => 'static_pages#food'

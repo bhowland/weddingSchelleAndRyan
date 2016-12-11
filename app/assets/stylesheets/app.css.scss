@@ -6712,6 +6712,64 @@ input:focus,
   color: #98978b;
 }
 
+//////////////////////////////////////////////////////////image stuff
+.new {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-shadow: 2px 2px 4px #888888;
+  height: 200px;
+  width: 150px;
+
+}
+
+.new:hover {
+    box-shadow: 2px 2px 2px #001f36;
+    border-color: #FF804D;
+}
+
+.new:active {
+    box-shadow: 2px 2px 2px #001f36;
+    border-color: #FF804D;
+}
+
+.new1 {
+  border: outset;
+  border-color: #FF804D;
+}
+/////////////////////////////////////////////////////////////
+
+
+
+#ladies{
+  width: 40%;
+  float: left;
+
+  text-align: center;
+  margin-right: 5em;
+}
+
+#dudes{
+  width: 40%;
+  float: right;
+
+  text-align: center;
+  margin-right: 5em;
+
+}
+
+
+
+#HS{
+  width: 100%;
+text-align: center;
+  padding-bottom: 20px;
+  margin-top: 750px;
+}
+
+
+
 /*=====================================      SIDEBAR STUFF =================*/
 
 /*for making custom fonts*/
@@ -6841,5 +6899,4 @@ input:focus,
 .inset {
   padding: 15px;
 }
-
 }

@@ -9,6 +9,17 @@
 	Below are examples of men’s and women’s garb (Click to enlarge)
 </p>
 <p>
+
+	<!-- loopa the images from the garb images folder. Next 4 lines-->
+	<% @images = Dir.glob("app/assets/images/garb/*.jpg") %>
+	<% @images.each do |image| %>
+    	<%= image_tag image.gsub("app/assets/images/", ""), height: '110', width: '110' %>
+    <% end %>
+
+
+
+
+
 	<h4>
 		Below are links to websites or stores that sell medieval clothing
 	</h4>

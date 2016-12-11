@@ -1,0 +1,4 @@
+class GarbVController < ApplicationController
+
+
+end
