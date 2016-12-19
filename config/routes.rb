@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#index'
   get  'directions' => 'maps_ebed#directions'
-  get  'stay'       => 'maps_ebed#stay'
+  # get  'stay'       => 'maps_ebed#stay'
 
   get  'garb'       => 'static_pages#garbV'
   get  'contact'    => 'static_pages#contact'
