@@ -11,8 +11,8 @@
 <!-- render partial: "layouts/flash_messages", flash: flash %>  is you want to use this remember the < %= at the start-->
     <%= yield %>
 
-    <!-- had to move to get the lightbox to work -->
-	<%= javascript_include_tag 'application', 'data-turbolinks-track':'reload' %>
+    <!-- had to move to get the lightbox to -->
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
   </body>
 </html>
