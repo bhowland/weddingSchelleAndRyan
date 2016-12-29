@@ -7,19 +7,14 @@
 
 	<br />
 	Below are examples of men’s and women’s garb (Click to enlarge)
-
 </p>
 <p>
 	<br />
-	<!-- loopa the images from the garb images folder. Next 4 lines-->
+	<!-- loopa the images from the garb images folder. Next 5 lines-->
 	<% @images = Dir.glob("app/assets/images/garb/*.jpg") %>
-	<% @images.each do |image| %>
-    	<%= image_tag image.gsub("app/assets/images/", ""), height: '110', width: '110' %>
-    <% end %>
-
-
-
-
+  <% @images.each do |photo| %>       
+    <%= link_to(image_tag(photo.gsub("app/assets/images/", ""), height: '110', width: '110'), image_path(photo.gsub("app/assets/images/", "")), data: { lightbox: "example-set" }) %>     
+  <% end %>
 
 	<h4>
 		Below are links to websites or stores that sell medieval clothing
