@@ -6841,9 +6841,10 @@ input:focus,
 }
 
 .sidebar-nav > .sidebar-brand {
-  height: 65px;
+  padding-top: 60px
+  /*height: 65px;
   line-height: 60px;
-  font-size: 18px;
+  font-size: 18px;*/
 }
 
 .sidebar-nav > .sidebar-brand a {
