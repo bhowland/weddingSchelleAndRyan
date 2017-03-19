@@ -1,4 +1,6 @@
 <% provide(:title, 'Contact') %>
+
+
 <h3>
 	Who should I Contact?
 </h3>
@@ -8,12 +10,12 @@
  		<li>Kelly Maas</li>
  			<ul>
  				<li>Cell: 608-434-0356</li>
- 				<li>Email: uno_mas<%= 64.chr %>gmail.com</li>
+ 				<li>Email: <%= mail_to "uno.mas@gmail.com", "Kelly's Email" ,subject: "Question or Comment About the Wedding"  %></li>
  			</ul>	
  		<li>Rebecca Maas</li>
  			<ul>
  				<li>Cell: 608-302-7560</li>
- 				<li>Email: blmaas@gmail.com</li>
+ 				<li>Email: <%= mail_to "blmaas@gmail.com", "Rebecca's Email" ,subject: "Question or Comment About the Wedding"  %></li>
  			</ul>
     	<li>Shelly Sonsalla</li>
     		<ul>
@@ -22,7 +24,7 @@
     	<li>Sandy Jopp</li>
     		<ul>
     			<li>Cell: 608-963-0868</li>
-                <li>Email: sandy8183@yahoo.com</li>
+                <li>Email: <%= mail_to "sandy8183@yahoo.com", "Sandy's Email" ,subject: "Question or Comment About the Wedding"  %></li>
     		</ul>
     </ul>
 </p>
