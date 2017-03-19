@@ -2,7 +2,7 @@
 
 This is a site for a wedding for some friends of mine.
 
-  Done With ROR and bootstrap for the css base.
+Done With ROR and bootstrap for the css base.
 
- Hosted at:
-* https://mischelleandryan.herokuapp.com/
+Hosted at:
+	* https://mischelleandryan.herokuapp.com/
